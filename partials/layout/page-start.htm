@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {# <link rel="shortcut icon" type="image/png" href="{{ 'assets/img/favicon/favicon.ico'|theme }}" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/img/favicon/apple-touch-icon.png'|theme }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/img/favicon/favicon-32x32.png'|theme }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/img/favicon/favicon-16x16.png'|theme }}">
+        <link rel="manifest" href="{{ 'assets/img/favicon/site.webmanifest'|theme }}">
+        <link rel="mask-icon" href="{{ 'assets/img/favicon/safari-pinned-tab.svg'|theme }}" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff"> #}
+        
+        <link rel="canonical" href="{{ this.page.url }}"/>
+
+        {% if this.page.settings.meta_title or this.page.title %}
+            <meta name="title" content="{{ this.page.settings.meta_title ? this.page.settings.meta_title : this.page.title }}">
+        {% endif %}
+
+        {% if this.page.settings.meta_description %}
+            <meta name="description" content="{{ this.page.settings.meta_description }}">
+        {% endif %}
+
+        {% styles %}
+
+        <link rel="stylesheet" href="{{ 'assets/compiled/css/app.css'|theme }}">
+        <script>
+            window.Config = {
+                menuBreakpoint: 991
+            }
+        </script>
+    </head>
+    <body class="is-loading">
+        {% partial 'preloader' %}
+        <main class="content">
+            

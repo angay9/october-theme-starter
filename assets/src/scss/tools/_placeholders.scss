@@ -1,0 +1,13 @@
+@mixin placeholder($el: '') {
+    @if ($el) {
+        #{$el}::-webkit-input-placeholder {@content}
+        #{$el}:-moz-placeholder           {@content}
+        #{$el}::-moz-placeholder          {@content}
+        #{$el}:-ms-input-placeholder      {@content}
+    } @else {
+        ::-webkit-input-placeholder {@content}
+        :-moz-placeholder           {@content}
+        ::-moz-placeholder          {@content}
+        :-ms-input-placeholder      {@content}
+    }
+}

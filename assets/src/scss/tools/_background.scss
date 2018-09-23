@@ -1,0 +1,13 @@
+@mixin bg-img($url: '', $attachment: '') {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    @if $url != '' {
+        background-image: url($url);
+    }
+
+    @if $attachment != '' {
+        background-attachment: $attachment;
+    }
+}

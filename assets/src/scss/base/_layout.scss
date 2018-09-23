@@ -1,0 +1,12 @@
+html,
+body {
+    height: 100%;
+    font-size: $font-base; // @supports(font-variant: small-caps) {
+    // font-variant: small-caps;
+    // }
+    letter-spacing: 1.4px;
+}
+
+img {
+    max-width: 100%;
+}

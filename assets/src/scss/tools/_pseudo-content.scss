@@ -1,0 +1,5 @@
+@mixin pseudo-content {
+    display: block;
+    content: '.';
+    font-size: 0;
+}

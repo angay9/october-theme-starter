@@ -1,0 +1,18 @@
+.bg-cover {
+    @include bg-img();
+}
+
+.bg-cover-fixed {
+    @include bg-img('', fixed);
+}
+
+.bg-cover-size-lg {
+    &:before {
+    	@include pseudo-content;
+    	padding-top: 35%;
+    }
+
+    // @include bp-lg {
+    //     height: 700px;
+    // }
+}

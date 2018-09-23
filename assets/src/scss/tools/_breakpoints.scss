@@ -1,0 +1,41 @@
+@mixin bp($screen) {
+    @media (min-width: $screen) {
+        @content;
+    }
+}
+
+@mixin bp-sm {
+    @media (min-width: map-get($grid-breakpoints, "sm")) {
+        @content;
+    }
+}
+
+@mixin bp-md {
+    @media (min-width: map-get($grid-breakpoints, "md")) {
+        @content;
+    }
+}
+
+@mixin bp-lg {
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+        @content;
+    }
+}
+
+@mixin bp-xl {
+    @media (min-width: map-get($grid-breakpoints, "xl")) {
+        @content;
+    }
+}
+
+@mixin bp-xxl {
+    @media (min-width: map-get($grid-breakpoints, "xxl")) {
+        @content;
+    }
+}
+
+@mixin bp-full-hd {
+    @media (min-width: map-get($grid-breakpoints, "full-hd")) {
+        @content;
+    }
+}

@@ -1,0 +1,21 @@
+{% if pagination.lastPage > 1 %}
+    <nav aria-label="">
+        <ul class="pagination">
+            <li class="page-item {{ pagination.currentPage == 1 ? 'disabled' }}">
+                <a class="page-link" href="{{ this.page.baseFileName|page({ (pageParam): (pagination.currentPage-1) }) }}" tabindex="-1">
+                    
+                </a>
+            </li>
+            {% for page in 1..pagination.lastPage %}
+                <li class="page-item {{ pagination.currentPage == page ? 'active' : null }}">
+                    <a class="page-link" href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+                </li>
+            {% endfor %}
+            <li class="page-item {{ pagination.lastPage > pagination.currentPage ? '' : 'disabled' }}">
+                <a class="page-link" href="{{ this.page.baseFileName|page({ (pageParam): (pagination.currentPage+1) }) }}">
+                    
+                </a>
+            </li>
+        </ul>
+    </nav>
+{% endif %}

@@ -1,0 +1,12 @@
+@mixin linkStates($activeClass: 'active') {
+    &:hover, &:focus, &:active, &.#{$activeClass} {
+        @content;
+    }
+}
+
+@mixin noDecoration {
+    text-decoration: none;
+    @include linkStates {
+        text-decoration: none;
+    }
+}

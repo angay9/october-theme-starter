@@ -1,0 +1,87 @@
+// Body
+$body-bg: #fff;
+
+// Typography
+$font-family-sans-serif: 'Roboto', serif;
+$font-family-headings: 'Cambria', serif;
+$font-family-day: 'Stardos Stencil', cursive;
+
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$spacer: 0.5rem;
+
+$primary: #512200;
+$secondary: #b17037;
+$danger: #fa7777;
+$color-text-secondary: #b36f3c;
+// $success: #2f2f2f;
+$light: #ffffff;
+$black: #212121;
+$dark: #2f2f2f;
+$grey: #e5e5e5;
+$yellow: #ffdf48;
+
+$enable-rounded: false;
+$enable-shadows: false;
+
+// Breakpoints
+$grid-breakpoints: (
+    // Extra small screen / phone
+    xs: 0,
+    // Small screen / phone
+    sm: 576px,
+    // Medium screen / tablet
+    md: 768px,
+    // Large screen / desktop
+    lg: 992px,
+    // Extra large screen / wide desktop
+    xl: 1200px,
+    // XXL screen 
+    xxl: 1440px,
+
+    // Full hd screen
+    full-hd: 1920px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1410px,
+    // full-hd: 1850px
+);
+
+
+// Spacers
+$spacers: (
+  6: ($spacer * 3.5),
+  7: ($spacer * 4),
+  8: ($spacer * 4.5),
+  9: ($spacer * 5),
+  10: ($spacer * 5.5),
+  11: ($spacer * 6),
+  12: ($spacer * 6.5),
+  13: ($spacer * 7),
+  14: ($spacer * 7.5),
+  15: ($spacer * 8),
+);
+
+$font-xxs: 0.75rem;
+$font-xs: 1rem;
+$font-sm: 1.2rem;
+$font-md: 1.4rem;
+$font-lg: 1.8rem;
+$font-xlg: 2.8rem;
+$font-xxlg: 4rem;
+
+
+$font-base: 15px;
+$font-md: 1.286rem;
+$font-lg: 2.143rem;
+$font-xlg: 3rem;
+$font-giant: 10rem;
+
+
+$menu-box-shadow: 0 5px 45px rgba($black, 0.3);

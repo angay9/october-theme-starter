@@ -1,0 +1,12 @@
+@mixin underline($width, $height, $color, $margin: 30px auto 0) {
+    &:after {
+        @include pseudo-content;
+        @include bg-img('../../img/line.svg');
+        background-size: contain;
+        width: $width;
+        height: $height;
+        background-color: transparent;
+        margin: $margin; 
+        max-width: 100%;
+    }
+}
