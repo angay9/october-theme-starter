@@ -1,6 +1,6 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Settings
 @import "fonts";
@@ -8,14 +8,11 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-@import '~slick-carousel/slick/slick';
-@import '~slick-carousel/slick/slick-theme';
 
-@import "tools/*";
-@import "base/*";
-@import "objects/*";
-@import "components/*";
-@import "utilities/*";
+// @import "tools/*";
+// @import "base/*";
+// @import "objects/*";
+// @import "components/*";
+// @import "utilities/*";
 
-@import "~magnific-popup/src/css/main";
 // @import "vendor/*";
